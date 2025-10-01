@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>ALFI – Association de lutte contre la faim et pour l’insertion</title>
+  <meta name="description" content="ALFI – Lutte contre la faim et insertion. Agir ensemble : dons, bénévolat, projets." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo.svg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">
+        <!-- inline SVG fallback -->
+        <img src="logo.svg" alt="ALFI logo" class="logo-img"/>
+        <span class="brand">ALFI</span>
+      </a>
+      <nav class="main-nav">
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#events">Événements</a>
+        <a href="#membership">Adhésion</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="menuToggle" class="menu-toggle" aria-label="menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <h1>ALFI</h1>
+        <p>Association de lutte contre la faim et pour l’insertion — agir localement, aider durablement.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#projects">Nos actions</a>
+          <a class="btn outline" href="#membership">Adhérer / Faire un don</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h2>À propos</h2>
+      <p>ALFI a pour vocation d’assurer des actions d’aide alimentaire, d’accompagnement social et d’insertion professionnelle. Créée à Thiaroye (Sénégal) et aujourd’hui active en France, ALFI travaille en partenariat avec des acteurs locaux pour maximiser l'impact.</p>
+      <ul>
+        <li>Mission : lutte contre la faim</li>
+        <li>Insertion : accompagnement socio-économique</li>
+        <li>Valeurs : solidarité, transparence, neutralité</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container section">
+      <h2>Projets</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Distribution alimentaire</h3>
+          <p>Repas chauds, colis alimentaires et aide d’urgence pour les familles vulnérables.</p>
+        </article>
+        <article class="card">
+          <h3>Soutien scolaire et daara</h3>
+          <p>Fourniture de fournitures, soutien pédagogique et aide aux écoles coraniques.</p>
+        </article>
+        <article class="card">
+          <h3>Santé</h3>
+          <p>Aide ponctuelle à l’achat d’ordonnances et prise en charge santé.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="events" class="container section">
+      <h2>Événements</h2>
+      <p>Prochain événement culturel : <strong>2 mai 2026</strong>.</p>
+      <div id="eventsList"></div>
+    </section>
+
+    <section id="membership" class="container section">
+      <h2>Adhésion et cotisations</h2>
+      <p>Droit d’adhésion : <strong>10 €</strong> — Cotisation mensuelle : <strong>5 €</strong>. Les contributions supérieures sont possibles.</p>
+      <form id="membershipForm" class="form">
+        <label>Nom complet <input type="text" name="name" required /></label>
+        <label>Email <input type="email" name="email" required /></label>
+        <label>Téléphone <input type="tel" name="phone" /></label>
+        <label>Message <textarea name="message"></textarea></label>
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+      <p class="note">Pour les dons en ligne, nous recommandons d’ajouter ultérieurement un bouton sécurisé (Stripe/PayPal).</p>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Contact</h2>
+      <p>Email : <a href="mailto:contact@alfi.org">contact@alfi.org</a></p>
+      <p>Adresse : Salle Bellushis, 5 rue de Dunkerque, 75010 Paris</p>
+      <form id="contactForm" class="form">
+        <label>Nom <input type="text" name="name" required/></label>
+        <label>Email <input type="email" name="email" required/></label>
+        <label>Message <textarea name="message" required></textarea></label>
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© ALFI 2025 — Tous droits réservés</p>
+      <p><a href="#contact">Nous contacter</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
